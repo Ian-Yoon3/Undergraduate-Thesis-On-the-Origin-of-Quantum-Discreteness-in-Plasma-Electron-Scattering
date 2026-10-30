@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+experiment1_log.json
+exp2_logs/
