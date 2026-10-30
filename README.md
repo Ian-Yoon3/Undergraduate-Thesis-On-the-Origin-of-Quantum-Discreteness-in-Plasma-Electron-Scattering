@@ -6,6 +6,8 @@ Source code for the undergraduate thesis
 
 📄 [Read the full thesis (PDF, 106 pages)](thesis.pdf)
 
+This PDF is the author's typeset version. The version submitted to Dongguk University follows the university's format and is featured on the author's LinkedIn profile.
+
 The thesis is also featured on the author's [LinkedIn profile](https://www.linkedin.com/in/sunghyuk-yoon-3a1319383/).
 
 ## Motivation
