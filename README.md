@@ -4,7 +4,7 @@ Source code for the undergraduate thesis
 **On the Origin of Quantum Discreteness in Plasma Electron Scattering. A Non-Archimedean Exploration of the Amplituhedron and Its p-adic Structure**
 (Sung-hyuk Yoon, Dongguk University, 2026. Supervised by Dr. Jeon ByungHoon.)
 
-📄 [Read the full thesis (PDF, 106 pages)]
+📄 [Read the full thesis (PDF, 106 pages)](thesis.pdf)
 
 The thesis is also featured on the author's [LinkedIn profile](https://www.linkedin.com/in/sunghyuk-yoon-3a1319383/).
 
@@ -24,7 +24,7 @@ The QP track adds a p-adically scaled perturbation to the same input.
 Both tracks are exact, so the comparison is not a comparison of floating-point error.
 The difference between the two tracks is read through its p-adic valuation instead of its magnitude.
 
-![Simulation flowchart](figures/simulation_algorithm.png)
+![Simulation flowchart](simulation_algorithm.png)
 
 *Flowchart of the simulation (left) and its correspondence with the amplituhedron construction of Arkani-Hamed and Trnka (right).*
 
@@ -69,7 +69,7 @@ The implementation follows the five-step algorithm of Section 3.3.3 of the thesi
 4. Evaluate the canonical form of each cell.
 5. Sum the cell contributions into the total amplitude.
 
-![BCFW recursion tree for (7, 2)](figures/bcfwtree.png)
+![BCFW recursion tree for (7, 2)](bcfwtree.png)
 
 *BCFW recursion tree for (n, k) = (7, 2). Each leaf is a base case, either an MHV cell or a simplex cell.*
 
@@ -88,8 +88,8 @@ The code runs with NumPy and Matplotlib only.
 | `experiment1_standalone.py` | Core implementation and Experiment 1 (QQ vs QP as the particle number n grows) |
 | `experiment2_matrix.py` | Experiment 2 (grid over precision and n_step). Imports the functions of Experiment 1 |
 | `requirements.txt` | Package versions the code was tested with |
-| `figures/` | Flowchart, recursion tree and output plot |
-| `docs/` | Full text of the thesis and a five-page summary |
+| `simulation_algorithm.png`, `bcfwtree.png`, `experiment1_result.png` | Flowchart, recursion tree and output plot |
+| `thesis.pdf`, `summary.pdf` | Full text of the thesis and a five-page summary |
 
 ## How to run
 
@@ -115,7 +115,7 @@ When the two tracks agree exactly, the scripts report the depth as prec by conve
 
 Experiment 1 with default settings (k = 1, p = 23, n = 5 to 8) produces the plot below.
 
-![Experiment 1 result](figures/experiment1_result.png)
+![Experiment 1 result](experiment1_result.png)
 
 ## Verification
 
@@ -127,7 +127,7 @@ For (n, k, m) = (5, 1, 4) the code returns Ω = 288⁴ = 6,879,707,136.
 
 A five-page summary of the thesis is available for a quicker read.
 
-📄 [Read the summary (PDF)](docs/summary.pdf)
+📄 [Read the summary (PDF)](summary.pdf)
 
 ## Citation
 
