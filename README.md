@@ -4,7 +4,9 @@ Source code for the undergraduate thesis
 **On the Origin of Quantum Discreteness in Plasma Electron Scattering. A Non-Archimedean Exploration of the Amplituhedron and Its p-adic Structure**
 (Sung-hyuk Yoon, Dongguk University, 2026. Supervised by Dr. Jeon ByungHoon.)
 
-📄 [Read the full thesis (PDF, 106 pages)](docs/thesis.pdf)
+📄 [Read the full thesis (PDF, 106 pages)]
+
+The thesis is also featured on the author's [LinkedIn profile](https://www.linkedin.com/in/sunghyuk-yoon-3a1319383/).
 
 ## Motivation
 
