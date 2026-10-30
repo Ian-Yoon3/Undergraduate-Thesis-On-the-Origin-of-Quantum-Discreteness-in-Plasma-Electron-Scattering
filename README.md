@@ -6,7 +6,9 @@ Source code for the undergraduate thesis
 
 📄 [Read the full thesis (PDF, 106 pages)](thesis.pdf)
 
-This PDF is the author's typeset version. The version submitted to Dongguk University follows the university's format and is featured on the author's LinkedIn profile[LinkedIn profile](https://www.linkedin.com/in/sunghyuk-yoon-3a1319383/).
+This PDF is the author's typeset version. The version submitted to Dongguk University follows the university's format and is featured on the author's [LinkedIn profile](https://www.linkedin.com/in/sunghyuk-yoon-3a1319383/).
+
+> **Note.** The author now considers that the central method of this thesis cannot test its own hypothesis. The [Retrospective](#retrospective) section explains why. It is worth reading before the findings below.
 
 ## Motivation
 
@@ -28,7 +30,7 @@ The difference between the two tracks is read through its p-adic valuation inste
 
 *Flowchart of the simulation (left) and its correspondence with the amplituhedron construction of Arkani-Hamed and Trnka (right).*
 
-## Key findings
+## Findings reported in the thesis
 
 The QP track does not compute the amplitude more precisely than the QQ track.
 Both tracks carry rational entries, and neither approximates anything.
@@ -56,8 +58,6 @@ The prime content of the amplitude is inherited from the differences of small in
 
 The results do not show that a p-adic framework computes the amplitude more accurately.
 They do not show that probabilistic uncertainty is reduced either.
-What the code demonstrates is narrower.
-The choice of number system leaves a definite and reproducible imprint on an exactly computed amplitude.
 
 ## Algorithm
 
@@ -122,6 +122,24 @@ Experiment 1 with default settings (k = 1, p = 23, n = 5 to 8) produces the plot
 The implementation is checked against the invariants listed in Appendix D of the thesis.
 Invariant I-1 is reproduced exactly.
 For (n, k, m) = (5, 1, 4) the code returns Ω = 288⁴ = 6,879,707,136.
+
+## Retrospective
+
+The central design of this study does not test what it set out to test.
+Both tracks take rational inputs and use exact rational arithmetic.
+Every result is therefore a rational number.
+The rationals sit inside both the reals and the p-adic numbers, so a forward computation of this kind cannot tell the two number systems apart.
+The p-adic valuation applied afterward measures the arithmetic of the chosen inputs, not a difference between number systems.
+The perturbation itself also follows real-number intuition.
+Its scale is set by 1/p^(prec/2), which is small in the real sense.
+In the p-adic sense the same quantity is large, since its p-adic norm is p^(prec/2).
+A perturbation that is small in the p-adic sense would scale as p^N instead.
+The structure reported in the thesis holds as arithmetic.
+It is not evidence that the choice of number system shapes the amplitude.
+
+A real test needs a step where the two number systems behave differently.
+Limits and convergence are such steps, since the reals and the p-adics complete the rationals in different ways.
+The inverse problem named in the thesis conclusion is one setting where this difference could appear.
 
 ## Thesis summary
 
